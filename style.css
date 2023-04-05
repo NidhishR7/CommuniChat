@@ -1,75 +1,34 @@
-body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-}
+form {
+    border: 1px solid #ccc;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+  }
 
-.container {
-	max-width: 600px;
-	margin: 0 auto;
-	background-color: #f1f1f1;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+  /* Style the form input fields */
+  input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
-.chat-header {
-	background-color: #4CAF50;
-	color: white;
-	padding: 10px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-}
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
-.chat-body {
-	padding: 10px;
-	height: 300px;
-	overflow-y: scroll;
-}
-
-.message-container {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-
-.message {
-	max-width: 70%;
-	padding: 10px;
-	border-radius: 5px;
-	word-wrap: break-word;
-}
-
-.sender {
-	align-self: flex-end;
-	background-color: #4CAF50;
-	color: white;
-}
-
-.receiver {
-	align-self: flex-start;
-	background-color: #f2f2f2;
-	color: black;
-}
-
-.chat-footer {
-	display: flex;
-	align-items: center;
-	padding: 10px;
-}
-
-.chat-footer input[type="text"] {
-	flex: 1;
-	padding: 10px;
-	border-radius: 5px;
-	border: none;
-}
-
-.chat-footer button {
-	background-color: #4CAF50;
-	color: white;
-	padding: 10px 20px;
-	border-radius: 5px;
-	border: none;
-	margin-left: 10px;
-	cursor: pointer;
-}
+  /* Add styles to the error message */
+  .error {
+    color: red;
+  }
